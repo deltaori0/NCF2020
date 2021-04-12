@@ -1,22 +1,28 @@
-bots.nc\_example\_v3 package
-============================
+예제 3. Simple3
+==================
 
-Submodules
-----------
+Simple과 Simple2는 유닛이 생산되자 마자, 적 본진이나 가장 가까운 적 유닛을 공격하기 때문에, 
+전력이 모이지 않고 각계격파된다.
+또한 주력 유닛인 해병과 불곰은 스팀팩을 사용해서 일시적으로 공격력을 높일 수 있는데,
+스팀팩을 전혀 사용하지 않기 때문에 해당 유닛의 전투력을 충분히 이용하고 있지 않다.
 
-bots.nc\_example\_v3.push\_bot module
--------------------------------------
+Simple3는 이 문제를 개선한 AI이다. Simple3는 유닛이 생산되자 마자 바로 공격을 보내는 대신, 
+유닛 숫자가 15이 되기 전까지는 사령부 근처에 병력을 집결시켜두고, 15가 넘을 때만 공격을 하도록 했다.
 
-.. automodule:: bots.nc_example_v3.push_bot
-    :members:
-    :undoc-members:
-    :show-inheritance:
+.. literalinclude:: bot.py
+   :lines: 93-112
 
+또한, 해병과 불곰의 주요 스킬인 스팀팩을 사용하는 규칙을 구현했다.
+스팀팩은 해당 유닛의 채력을 소모하는 대신, 순간적으로 공격속도를 높여주는 스킬이므로, 
+체력이 충분히 있고, 적과 교전하기 직전에 한번만 사용해야 한다.
 
-Module contents
----------------
+그리고, Simple2보다 더 많은 종류의 유닛을 생산하도록 했다.
 
-.. automodule:: bots.nc_example_v3
-    :members:
-    :undoc-members:
-    :show-inheritance:
+.. literalinclude:: bot.py
+   :lines: 26-40
+
+Simle3는 Simple과 Simple2를 상대로 매우 쉽게 승리하는 것을 볼 수 있다.
+
+.. code-block:: bash
+
+   (sc2) ~/sc2minigame $ python run_sc2minigame.py --bot1=bots.nc3_simple3 --bot2=bots.nc1_simple

@@ -1,10 +1,6 @@
 
 __author__ = '박현수 (hspark8312@ncsoft.com), NCSOFT Game AI Lab'
 
-# python-sc2 patch
-# 주의! 반드시 sc2 보다 먼저 import 되어야 함
-# import sc2_patch
-
 # python -m bots.nc_example_v5.bot --server=172.20.41.105
 # kill -9 $(ps ax | grep SC2_x64 | fgrep -v grep | awk '{ print $1 }')
 # kill -9 $(ps ax | grep bots.nc_example_v5.bot | fgrep -v grep | awk '{ print $1 }')
@@ -26,6 +22,7 @@ nest_asyncio.apply()
 import numpy as np
 import psutil
 import sc2
+import plotille
 import torch
 import torch.multiprocessing as mp
 import torch.nn as nn
@@ -47,8 +44,8 @@ from .bot import Model
 from .consts import CommandType
 from .consts import ArmyStrategy, EconomyStrategy, Sample
 from .consts import MessageType
-from toolbox.utils import keyboard, backup_dir, get_memory_usage, get_memory_usage_delta, kill_children_processes
-from toolbox.utils.ascii_plot import draw_line, draw_sparkline
+from sc2_utils import keyboard, backup_dir, get_memory_usage, get_memory_usage_delta, kill_children_processes
+from sc2_utils.ascii_plot import draw_sparkline
 
 
 def parse_arguments():
@@ -141,7 +138,7 @@ class Trainer:
         self.writer = SummaryWriter()
         self.scores = deque(maxlen=250)
         self.saved_model_score = -1e10
-        self.average_scores = deque(maxlen=1000)
+        self._scores = deque(maxlen=10000)
         self.n_errors = 0
 
         self.env = Environment(args)
@@ -205,12 +202,11 @@ class Trainer:
             if done:
                 # 승패 기록
                 self.scores.append(reward)
+                self._scores.append((self.frames, np.mean(self.scores)))
                 if len(self.scores) >= self.scores.maxlen:
                     mean_score = np.mean(self.scores)
-                    self.writer.add_scalar(
-                        'perf/score', mean_score, self.frames)
-                    self.writer.add_scalar(
-                        'perf/win_ratio', (mean_score + 1.) / 2., self.frames)
+                    self.writer.add_scalar('perf/score', mean_score, self.frames)
+                    self.writer.add_scalar('perf/win_ratio', (mean_score + 1.) / 2., self.frames)
 
             # 데이터 저장
             # 현재 데이터를 저장할 수 있는 trajectory 검색
@@ -357,9 +353,7 @@ class Trainer:
         self.writer.add_scalar(f'info/memory_used_percent', memory_usage_dict['percent'])
         self.writer.add_scalar(f'info/memory_used_gb', get_memory_usage())
         self.writer.add_scalar(f'info/memory_usage_delta', get_memory_usage_delta())
-
-        self.average_scores.append((self.frames, np.mean(self.scores)))
-        draw_line(self.average_scores, title='score', print_out=True)
+        print(plotille.scatter(*zip(*self._scores), height=30, X_label='Frames', Y_label='Score', y_min=-1.0, y_max=1.0))
         text = [
             f'step: {self.frames}',
             f'score: {np.mean(self.scores):.3f}',

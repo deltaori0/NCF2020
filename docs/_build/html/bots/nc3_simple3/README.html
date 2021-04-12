@@ -1,130 +1,282 @@
 
-<!DOCTYPE html>
 
-<html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <title>bots.nc_example_v3 package &#8212; sc2minigame  문서</title>
-    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
-    <script src="../../_static/translations.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>예제 3. Simple3 &mdash; sc2minigame  문서</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" />
-    <link rel="next" title="bots.nc_example_v4 package" href="../nc4_simple_ppo/README.html" />
-    <link rel="prev" title="bots.nc_example_v2 package" href="../nc2_simple2/README.html" />
+    <link rel="next" title="예제 4. Simple PPO" href="../nc4_simple_ppo/README.html" />
+    <link rel="prev" title="예제 2. Simple2" href="../nc2_simple2/README.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
    
-  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
-  </head><body>
-  
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
           
 
-          <div class="body" role="main">
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> sc2minigame
+          
+
+          
             
-  <div class="section" id="bots-nc-example-v3-package">
-<h1>bots.nc_example_v3 package<a class="headerlink" href="#bots-nc-example-v3-package" title="제목 주소">¶</a></h1>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="제목 주소">¶</a></h2>
-</div>
-<div class="section" id="bots-nc-example-v3-push-bot-module">
-<h2>bots.nc_example_v3.push_bot module<a class="headerlink" href="#bots-nc-example-v3-push-bot-module" title="제목 주소">¶</a></h2>
-</div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="제목 주소">¶</a></h2>
-</div>
+            <img src="../../_static/NC CI_window to the future2-white.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                20-11-17
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
 
-
-          </div>
           
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="../../index.html">
-              <img class="logo" src="../../_static/NC CI_window to the future-navy gradient.png" alt="Logo"/>
-            </a></p>
-<h1 class="logo"><a href="../../index.html">sc2minigame</a></h1>
 
-
-
-
-
-
-
-
-<h3>탐색</h3>
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">환경설정 및 기본 예제</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../README.html">빠른 시작</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docs/intro.html">시스템 구조 및 게임 규칙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">시작하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/system_and_rules.html">시스템 구조 및 게임 규칙</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nc0_dummy/README.html">예제 0. Dummy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nc1_simple/README.html">예제 1. Simple: 간단한 build-order</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nc2_simple2/README.html">예제 2. Simple 2: 적응형 build-order</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">예제 3. Simple 3: 집결지</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../nc4_simple_ppo/README.html">예제 4. Simple PPO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nc4_simple_ppo/README.html">예제 5. Simple PPO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nc4_simple_ppo/README.html">예제 4. Simple PPO: 분산학습 예</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nc5_nuke_bot/README.html">예제 5. Nuke Bot: 스킬 사용 예</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../eval/README.html">평가 시스템 및 제출 방식</a></li>
 </ul>
 
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../nc2_simple2/README.html" title="이전 장">bots.nc_example_v2 package</a></li>
-      <li>Next: <a href="../nc4_simple_ppo/README.html" title="다음 장">bots.nc_example_v4 package</a></li>
-  </ul></li>
-</ul>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sc2minigame</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>예제 3. Simple3</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/bots/nc3_simple3/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">빠른 검색</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="이동" />
-    </form>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="simple3">
+<h1>예제 3. Simple3<a class="headerlink" href="#simple3" title="제목 주소">¶</a></h1>
+<p>Simple과 Simple2는 유닛이 생산되자 마자, 적 본진이나 가장 가까운 적 유닛을 공격하기 때문에,
+전력이 모이지 않고 각계격파된다.
+또한 주력 유닛인 해병과 불곰은 스팀팩을 사용해서 일시적으로 공격력을 높일 수 있는데,
+스팀팩을 전혀 사용하지 않기 때문에 해당 유닛의 전투력을 충분히 이용하고 있지 않다.</p>
+<p>Simple3는 이 문제를 개선한 AI이다. Simple3는 유닛이 생산되자 마자 바로 공격을 보내는 대신,
+유닛 숫자가 15이 되기 전까지는 사령부 근처에 병력을 집결시켜두고, 15가 넘을 때만 공격을 하도록 했다.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>            <span class="k">if</span> <span class="n">unit</span><span class="o">.</span><span class="n">type_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MEDIVAC</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">combat_units</span><span class="o">.</span><span class="n">amount</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">:</span>
+                    <span class="c1"># 전투가능한 유닛 수가 15를 넘으면 적 본진으로 공격</span>
+                    <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">unit</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">target</span><span class="p">))</span>
+                    <span class="n">use_stimpack</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># 적 사령부 방향에 유닛 집결</span>
+                    <span class="n">target</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_location</span> <span class="o">+</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="p">(</span><span class="n">enemy_cc</span><span class="o">.</span><span class="n">position</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_location</span><span class="p">)</span>
+                    <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">unit</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">target</span><span class="p">))</span>
+                    <span class="n">use_stimpack</span> <span class="o">=</span> <span class="kc">False</span>
+
+                <span class="k">if</span> <span class="n">unit</span><span class="o">.</span><span class="n">type_id</span> <span class="ow">in</span> <span class="p">(</span><span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MARINE</span><span class="p">,</span> <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MARAUDER</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">use_stimpack</span> <span class="ow">and</span> <span class="n">unit</span><span class="o">.</span><span class="n">distance_to</span><span class="p">(</span><span class="n">target</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">15</span><span class="p">:</span>
+                        <span class="c1"># 유닛과 목표의 거리가 15이하일 경우 스팀팩 사용</span>
+                        <span class="k">if</span> <span class="ow">not</span> <span class="n">unit</span><span class="o">.</span><span class="n">has_buff</span><span class="p">(</span><span class="n">BuffId</span><span class="o">.</span><span class="n">STIMPACK</span><span class="p">)</span> <span class="ow">and</span> <span class="n">unit</span><span class="o">.</span><span class="n">health_percentage</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">:</span>
+                            <span class="c1"># 현재 스팀팩 사용중이 아니며, 체력이 50% 이상</span>
+                            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">evoked</span><span class="o">.</span><span class="n">get</span><span class="p">((</span><span class="n">unit</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="n">AbilityId</span><span class="o">.</span><span class="n">EFFECT_STIM</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">:</span>
+                                <span class="c1"># 1초 이전에 스팀팩을 사용한 적이 없음</span>
+                                <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">unit</span><span class="p">(</span><span class="n">AbilityId</span><span class="o">.</span><span class="n">EFFECT_STIM</span><span class="p">))</span>
+                                <span class="bp">self</span><span class="o">.</span><span class="n">evoked</span><span class="p">[(</span><span class="n">unit</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="n">AbilityId</span><span class="o">.</span><span class="n">EFFECT_STIM</span><span class="p">)]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span>
+</pre></div>
+</div>
+<p>또한, 해병과 불곰의 주요 스킬인 스팀팩을 사용하는 규칙을 구현했다.
+스팀팩은 해당 유닛의 채력을 소모하는 대신, 순간적으로 공격속도를 높여주는 스킬이므로,
+체력이 충분히 있고, 적과 교전하기 직전에 한번만 사용해야 한다.</p>
+<p>그리고, Simple2보다 더 많은 종류의 유닛을 생산하도록 했다.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="bp">self</span><span class="o">.</span><span class="n">target_unit_counts</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">COMMANDCENTER</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>  <span class="c1"># 추가 사령부 생산 없음</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MARINE</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MARAUDER</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">REAPER</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">GHOST</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">HELLION</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">SIEGETANK</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">THOR</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MEDIVAC</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">VIKINGFIGHTER</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">BANSHEE</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">RAVEN</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">BATTLECRUISER</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="p">}</span>
+</pre></div>
+</div>
+<p>Simle3는 Simple과 Simple2를 상대로 매우 쉽게 승리하는 것을 볼 수 있다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>sc2<span class="o">)</span> ~/sc2minigame $ python run_sc2minigame.py --bot1<span class="o">=</span>bots.nc3_simple3 --bot2<span class="o">=</span>bots.nc1_simple
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../nc4_simple_ppo/README.html" class="btn btn-neutral float-right" title="예제 4. Simple PPO" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../nc2_simple2/README.html" class="btn btn-neutral float-left" title="예제 2. Simple2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
-</div>
-<script>$('#searchbox').show(0);</script>
+  
 
+  <hr/>
 
+  <div role="contentinfo">
+    <p>
+        
+        &copy; 저작권 2020, Game AI Lab, NCSOFT
 
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
-
-
-
+</footer>
 
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2020, Game AI Lab, NCSOFT.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="../../_sources/bots/nc3_simple3/README.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
 
-    
+    </section>
 
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
     
-  </body>
+   
+
+</body>
 </html>

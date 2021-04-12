@@ -1,130 +1,269 @@
 
-<!DOCTYPE html>
 
-<html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <title>bots.nc_example_v2 package &#8212; sc2minigame  문서</title>
-    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
-    <script src="../../_static/translations.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>예제 2. Simple2 &mdash; sc2minigame  문서</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" />
-    <link rel="next" title="bots.nc_example_v3 package" href="../nc3_simple3/README.html" />
-    <link rel="prev" title="예제 1. Simple" href="../nc1_simple/README.html" />
+    <link rel="next" title="예제 3. Simple3" href="../nc3_simple3/README.html" />
+    <link rel="prev" title="예제 1. Simple" href="../nc1_simple/README.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
    
-  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
-  </head><body>
-  
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
           
 
-          <div class="body" role="main">
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> sc2minigame
+          
+
+          
             
-  <div class="section" id="bots-nc-example-v2-package">
-<h1>bots.nc_example_v2 package<a class="headerlink" href="#bots-nc-example-v2-package" title="제목 주소">¶</a></h1>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="제목 주소">¶</a></h2>
-</div>
-<div class="section" id="bots-nc-example-v2-simple-combat-bot-module">
-<h2>bots.nc_example_v2.simple_combat_bot module<a class="headerlink" href="#bots-nc-example-v2-simple-combat-bot-module" title="제목 주소">¶</a></h2>
-</div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="제목 주소">¶</a></h2>
-</div>
+            <img src="../../_static/NC CI_window to the future2-white.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                20-11-17
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
 
-
-          </div>
           
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="../../index.html">
-              <img class="logo" src="../../_static/NC CI_window to the future-navy gradient.png" alt="Logo"/>
-            </a></p>
-<h1 class="logo"><a href="../../index.html">sc2minigame</a></h1>
 
-
-
-
-
-
-
-
-<h3>탐색</h3>
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">환경설정 및 기본 예제</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../README.html">빠른 시작</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docs/intro.html">시스템 구조 및 게임 규칙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">시작하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/system_and_rules.html">시스템 구조 및 게임 규칙</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nc0_dummy/README.html">예제 0. Dummy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nc1_simple/README.html">예제 1. Simple: 간단한 build-order</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">예제 2. Simple 2: 적응형 build-order</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nc3_simple3/README.html">예제 3. Simple 3: 집결지</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../nc4_simple_ppo/README.html">예제 4. Simple PPO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nc4_simple_ppo/README.html">예제 5. Simple PPO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nc4_simple_ppo/README.html">예제 4. Simple PPO: 분산학습 예</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nc5_nuke_bot/README.html">예제 5. Nuke Bot: 스킬 사용 예</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../eval/README.html">평가 시스템 및 제출 방식</a></li>
 </ul>
 
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../nc1_simple/README.html" title="이전 장">예제 1. Simple</a></li>
-      <li>Next: <a href="../nc3_simple3/README.html" title="다음 장">bots.nc_example_v3 package</a></li>
-  </ul></li>
-</ul>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sc2minigame</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>예제 2. Simple2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/bots/nc2_simple2/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">빠른 검색</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="이동" />
-    </form>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="simple2">
+<h1>예제 2. Simple2<a class="headerlink" href="#simple2" title="제목 주소">¶</a></h1>
+<p>Simple은 현재 보유한 유닛들과 관계없이 해병 5, 의료선 1를 순서대로 생산한다.
+게임 초반에는 의도한 대로 유닛 구성을 할 수 있지만, 전투가 벌어진 초반 이후에는 의도대로 유닛 구성을 하기 어렵다.
+예를들어, 이미 의료선이 충분히 있더라도, 해병 5을 생산한 뒤에는
+의료선을 생산해야만하기 때문에 원래 의도(해병: 의료선 = 5: 1)와는 다른 유닛 구성을 가지게 된다.</p>
+<p>Simple2는 사전에 정의된 목표 유닛 구성 비율을, 현재 유닛 구성과 비교하여, 부족한 유닛을 차례대로 생산한다.
+따라서, 현재 유닛의 숫자나 비율에 관계없이 의도한 유닛 비율을 달성할 수 있는 빌드 오더를 생성할 수 있다.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="bp">self</span><span class="o">.</span><span class="n">target_unit_counts</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">COMMANDCENTER</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>  <span class="c1"># 추가 사령부 생산 없음</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MARINE</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MARAUDER</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MEDIVAC</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="p">}</span>
+</pre></div>
+</div>
+<p>Simple2는 해병, 불곰, 의료선을 각각 5, 2, 1로 비율로 생산하는 것을 목표로 한다.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="c1"># 부족한 유닛 숫자 계산</span>
+        <span class="n">unit_counts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">unit</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">units</span><span class="p">:</span>
+            <span class="n">unit_counts</span><span class="p">[</span><span class="n">unit</span><span class="o">.</span><span class="n">type_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">unit_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">unit</span><span class="o">.</span><span class="n">type_id</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+        
+        <span class="n">target_unit_counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">target_unit_counts</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
+        <span class="n">target_unit_ratio</span> <span class="o">=</span> <span class="n">target_unit_counts</span> <span class="o">/</span> <span class="p">(</span><span class="n">target_unit_counts</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">+</span> <span class="mf">1e-6</span><span class="p">)</span>  <span class="c1"># 목표로 하는 유닛 비율</span>
+        <span class="n">current_unit_counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">unit_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">tid</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">for</span> <span class="n">tid</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">target_unit_counts</span><span class="o">.</span><span class="n">keys</span><span class="p">()])</span>
+        <span class="n">current_unit_ratio</span> <span class="o">=</span> <span class="n">current_unit_counts</span> <span class="o">/</span> <span class="p">(</span><span class="n">current_unit_counts</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">+</span> <span class="mf">1e-6</span><span class="p">)</span>  <span class="c1"># 현재 유닛 비율</span>
+        <span class="n">unit_ratio</span> <span class="o">=</span> <span class="p">(</span><span class="n">target_unit_ratio</span> <span class="o">-</span> <span class="n">current_unit_ratio</span><span class="p">)</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 목표 - 현재 유닛 비율</span>
+</pre></div>
+</div>
+<p>목표 유닛의 비율과 현재 유닛의 비율 구한 뒤, 그 차이를 구한다.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>            <span class="n">next_unit</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">target_unit_counts</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="n">unit_ratio</span><span class="o">.</span><span class="n">argmax</span><span class="p">()]</span>  <span class="c1"># 가장 부족한 유닛을 다음에 훈련</span>
+</pre></div>
+</div>
+<p>차이가 가장 큰 유닛이 현재 가장 부족한 유닛이기 때문에, 다음에 생산할 유닛으로 결정한다.</p>
+<p>목표 비율과 현재 비율의 차이가 동일할 때 어떤 유닛을 먼저 생산할 지 문제를 아직 해결하지 않았지만,
+고정된 빌드오더에 비해면 유연하게 상황변화(현재 유닛 비율의 변화)에 대응할 수 있다.</p>
+<p>그러나, Simple2가 Simple을 상대로 쉽게 이길 수 없다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>sc2<span class="o">)</span> ~/sc2minigame $ python run_sc2minigame.py --bot1<span class="o">=</span>bots.nc2_simple2 --bot2<span class="o">=</span>bots.nc1_simple
+</pre></div>
+</div>
+<p>Simple2의 유닛구성이 Simple보다 더 우월하다고 보기 어렵고,
+현재 마이크로 컨트롤 구현에서는 빠르게 해병을 생산하는 Simple이 더 적절하기 때문일 것이다.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../nc3_simple3/README.html" class="btn btn-neutral float-right" title="예제 3. Simple3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../nc1_simple/README.html" class="btn btn-neutral float-left" title="예제 1. Simple" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
-</div>
-<script>$('#searchbox').show(0);</script>
+  
 
+  <hr/>
 
+  <div role="contentinfo">
+    <p>
+        
+        &copy; 저작권 2020, Game AI Lab, NCSOFT
 
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
-
-
-
+</footer>
 
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2020, Game AI Lab, NCSOFT.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="../../_sources/bots/nc2_simple2/README.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
 
-    
+    </section>
 
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
     
-  </body>
+   
+
+</body>
 </html>

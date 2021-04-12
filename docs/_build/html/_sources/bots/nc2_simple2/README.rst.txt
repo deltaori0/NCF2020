@@ -1,22 +1,37 @@
-bots.nc\_example\_v2 package
-============================
+예제 2. Simple2
+==================
 
-Submodules
-----------
+Simple은 현재 보유한 유닛들과 관계없이 해병 5, 의료선 1를 순서대로 생산한다.
+게임 초반에는 의도한 대로 유닛 구성을 할 수 있지만, 전투가 벌어진 초반 이후에는 의도대로 유닛 구성을 하기 어렵다.
+예를들어, 이미 의료선이 충분히 있더라도, 해병 5을 생산한 뒤에는
+의료선을 생산해야만하기 때문에 원래 의도(해병: 의료선 = 5: 1)와는 다른 유닛 구성을 가지게 된다.
 
-bots.nc\_example\_v2.simple\_combat\_bot module
------------------------------------------------
+Simple2는 사전에 정의된 목표 유닛 구성 비율을, 현재 유닛 구성과 비교하여, 부족한 유닛을 차례대로 생산한다.
+따라서, 현재 유닛의 숫자나 비율에 관계없이 의도한 유닛 비율을 달성할 수 있는 빌드 오더를 생성할 수 있다.
 
-.. automodule:: bots.nc_example_v2.simple_combat_bot
-    :members:
-    :undoc-members:
-    :show-inheritance:
+.. literalinclude:: bot.py
+   :lines: 25-30
 
+Simple2는 해병, 불곰, 의료선을 각각 5, 2, 1로 비율로 생산하는 것을 목표로 한다.
 
-Module contents
----------------
+.. literalinclude:: bot.py
+   :lines: 45-54
 
-.. automodule:: bots.nc_example_v2
-    :members:
-    :undoc-members:
-    :show-inheritance:
+목표 유닛의 비율과 현재 유닛의 비율 구한 뒤, 그 차이를 구한다.
+
+.. literalinclude:: bot.py
+   :lines: 61-61
+
+차이가 가장 큰 유닛이 현재 가장 부족한 유닛이기 때문에, 다음에 생산할 유닛으로 결정한다.
+
+목표 비율과 현재 비율의 차이가 동일할 때 어떤 유닛을 먼저 생산할 지 문제를 아직 해결하지 않았지만,
+고정된 빌드오더에 비해면 유연하게 상황변화(현재 유닛 비율의 변화)에 대응할 수 있다.
+
+그러나, Simple2가 Simple을 상대로 쉽게 이길 수 없다.
+
+.. code-block:: bash
+
+   (sc2) ~/sc2minigame $ python run_sc2minigame.py --bot1=bots.nc2_simple2 --bot2=bots.nc1_simple
+
+Simple2의 유닛구성이 Simple보다 더 우월하다고 보기 어렵고, 
+현재 마이크로 컨트롤 구현에서는 빠르게 해병을 생산하는 Simple이 더 적절하기 때문일 것이다.

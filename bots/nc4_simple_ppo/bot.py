@@ -1,9 +1,6 @@
 
 __author__ = '박현수 (hspark8312@ncsoft.com), NCSOFT Game AI Lab'
 
-# python-sc2 patch
-# 주의! 반드시 sc2 보다 먼저 import 되어야 함
-# import sc2_patch
 
 # python -m bots.nc_example_v5.bot --server=172.20.41.105
 # kill -9 $(ps ax | grep SC2_x64 | fgrep -v grep | awk '{ print $1 }')
@@ -34,11 +31,10 @@ from sc2.player import Bot as _Bot
 from sc2.position import Point2
 from termcolor import colored, cprint
 
-from .consts import CommandType
-from .consts import ArmyStrategy, EconomyStrategy
+from .consts import ArmyStrategy, CommandType, EconomyStrategy
+
 
 nest_asyncio.apply()
-
 
 
 class Model(nn.Module):

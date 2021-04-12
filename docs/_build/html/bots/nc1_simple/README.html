@@ -1,46 +1,199 @@
 
-<!DOCTYPE html>
 
-<html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <title>예제 1. Simple &#8212; sc2minigame  문서</title>
-    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
-    <script src="../../_static/translations.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>예제 1. Simple &mdash; sc2minigame  문서</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" />
-    <link rel="next" title="bots.nc_example_v2 package" href="../nc2_simple2/README.html" />
-    <link rel="prev" title="예제 0. Dummy" href="../nc0_dummy/README.html" />
+    <link rel="next" title="예제 2. Simple2" href="../nc2_simple2/README.html" />
+    <link rel="prev" title="예제 0. Dummy" href="../nc0_dummy/README.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
    
-  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
-  </head><body>
-  
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
           
 
-          <div class="body" role="main">
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> sc2minigame
+          
+
+          
+            
+            <img src="../../_static/NC CI_window to the future2-white.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                20-11-17
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">환경설정 및 기본 예제</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">시작하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/system_and_rules.html">시스템 구조 및 게임 규칙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nc0_dummy/README.html">예제 0. Dummy</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">예제 1. Simple: 간단한 build-order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nc2_simple2/README.html">예제 2. Simple 2: 적응형 build-order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nc3_simple3/README.html">예제 3. Simple 3: 집결지</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nc4_simple_ppo/README.html">예제 4. Simple PPO: 분산학습 예</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nc5_nuke_bot/README.html">예제 5. Nuke Bot: 스킬 사용 예</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../eval/README.html">평가 시스템 및 제출 방식</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sc2minigame</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>예제 1. Simple</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/bots/nc1_simple/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="simple">
 <h1>예제 1. Simple<a class="headerlink" href="#simple" title="제목 주소">¶</a></h1>
-<p>Simple은 유닛을 생산하고, 공격명령을 내리는 등의 아주 기본적인
-게임 플레이까지 보여준다.</p>
-<p>가장 기본적인 게임플레이가 가능하려면, 유닛을 생산하고</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="n">actions</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
-        <span class="c1">#</span>
+<p>Dummy에서는 AI를 구현하는 가장 간단한 방법에 대해 살펴보았다.
+예제 1. Simple에서는 본격적으로 입력받은 상태를 처리해서 액션을 결정하는 방법을 알아보겠다.
+우선 이 플랫폼에서 게임의 상태와 액션이 무엇인지에 대해 확인할 필요가 있다.</p>
+<p>python-sc2에서 AI는 다른 플레이어의 정보를 제외한 거의 모든 정보를 알 수 있다.
+현재 게임 상태에 대한 정보는 모두 BotAI 객체의 속성으로 추가되어 있고,
+on_step 이 호출되기 전에 이전 스텝의 액션의 결과가 반영된 최신 정보로 업데이트 되어있다.
+상태가 어떤 정보로 구성되어 있는지는 향후 예제에서 나올 것이므로, 현재 시점에서는 자세한 설명은 생략한다.
+더 자세한 정보를 알고 싶다면, <code class="file docutils literal notranslate"><span class="pre">/sc2/game_state.py</span></code> 를 확인하면 된다.</p>
+<p>Simple에서 중점적으로 살펴볼 것은 액션과 그 액션을 결정하는 방법이다.</p>
+<p>실시간 전략(RTS, Real-time Strategy) 시뮬레이션 게임에서는 게임마다 다양한 전략들이 있고,
+그 전략들은 흔히 유닛 생산순서를 의미하는 빌드오더(build-order)로 대응된다.
+빌드오더는 특정한 시점에 상대방보다 우위의 전력을 보유할 수 있도록 고안된 게임 초반 유닛 생산순서를
+의미한다. 두 플레이어가 각각 어떤 전략/빌드오더를 선택했느냐에 따라, 서로에 대해 우위를 점하는 시점과
+정도가 달라지기 때문에, 게임 초반에 어떤 빌드오더를 따르고, 어느 시점에 공격할지를 결정하는 것은
+RTS에서 가장 기본적이고 중요한 결정 사항 중 하나이다.
+이 플랫폼에서는 RTS의 많은 부분이 간략화 되었지만, 유닛 생산을 플레이어가 직접 결정해야 하기 때문에
+빌드오더 선택과 공격 시점을 결정하는 것은 여전히 가장 중요한 결정 사항이다.</p>
+<p>여기서 전략(또는 빌드오더)는 AI가 달성해야할 목표로 볼 수 있다.
+물론 최종 목표는 적 사령부를 파괴하는 것이지만,
+AI가 액션을 결정하도록 하기 위해서는 보다 구체적인 세부 목표를 결정해야한다.
+여기서 우리는 특정 빌드오더를 직접 결정하고, 그 빌드오더를 달성할 수 있는 액션을 AI가 결정하게 할 수 있다.</p>
+<p>예제 1. Simple은 이것을 간단하게 구현한 예이다. Simple은 정해진 빌드오더에 따라,
+유닛을 생산하고, 생산된 유닛들에게 공격 명령을 내리는 등의 아주 기본적인 게임 플레이를 할 수 있다.</p>
+<p>AI 내부에 빌드오더(self.build_order)를 가지고 있고, 빌드오더가 비어있으면,
+해병(marine) 5과 의료선(medivac) 1를 추가하도록 되어있다.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="c1">#</span>
         <span class="c1"># 빌드 오더 생성</span>
         <span class="c1"># </span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">build_order</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -49,86 +202,130 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">build_order</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MEDIVAC</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>매 스텝마다, 빌드오더에서 첫 번째 유닛 생산 가능하면, 사령부에서 생산한다.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="c1">#</span>
+        <span class="c1"># 사령부 명령 생성</span>
+        <span class="c1">#</span>
+        <span class="n">ccs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">units</span><span class="p">(</span><span class="n">UnitTypeId</span><span class="o">.</span><span class="n">COMMANDCENTER</span><span class="p">)</span>  <span class="c1"># 전체 유닛에서 사령부 검색</span>
+        <span class="n">ccs</span> <span class="o">=</span> <span class="n">ccs</span><span class="o">.</span><span class="n">idle</span>  <span class="c1"># 실행중인 명령이 없는 사령부 검색</span>
+        <span class="k">if</span> <span class="n">ccs</span><span class="o">.</span><span class="n">exists</span><span class="p">:</span>  <span class="c1"># 사령부가 하나이상 존재할 경우</span>
+            <span class="n">cc</span> <span class="o">=</span> <span class="n">ccs</span><span class="o">.</span><span class="n">first</span>  <span class="c1"># 첫번째 사령부 선택</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">can_afford</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">build_order</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">evoked</span><span class="o">.</span><span class="n">get</span><span class="p">((</span><span class="n">cc</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="s1">&#39;train&#39;</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">:</span>
+                <span class="c1"># 해당 유닛 생산 가능하고, 마지막 명령을 발행한지 1초 이상 지났음</span>
+                <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cc</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">build_order</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>  <span class="c1"># 첫 번째 유닛 생산 명령 </span>
+                <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_order</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 빌드오더에서 첫 번째 유닛 제거</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">evoked</span><span class="p">[(</span><span class="n">cc</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="s1">&#39;train&#39;</span><span class="p">)]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span>
+</pre></div>
+</div>
+<p>생산된 유닛들은 아래 규칙에 따라 각각의 액션을 결정한다.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>        <span class="c1">#</span>
+        <span class="c1"># 해병 명령 생성</span>
+        <span class="c1">#</span>
+        <span class="n">marines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">units</span><span class="p">(</span><span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MARINE</span><span class="p">)</span>  <span class="c1"># 해병 검색</span>
+        <span class="k">for</span> <span class="n">marine</span> <span class="ow">in</span> <span class="n">marines</span><span class="p">:</span>
+            <span class="n">enemy_cc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">enemy_start_locations</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 적 시작 위치</span>
+            <span class="n">enemy_unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">enemy_start_locations</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">known_enemy_units</span><span class="o">.</span><span class="n">exists</span><span class="p">:</span>
+                <span class="n">enemy_unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">known_enemy_units</span><span class="o">.</span><span class="n">closest_to</span><span class="p">(</span><span class="n">marine</span><span class="p">)</span>  <span class="c1"># 가장 가까운 적 유닛</span>
+
+            <span class="c1"># 적 사령부와 가장 가까운 적 유닛중 더 가까운 것을 목표로 공격 명령 생성</span>
+            <span class="k">if</span> <span class="n">marine</span><span class="o">.</span><span class="n">distance_to</span><span class="p">(</span><span class="n">enemy_cc</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">marine</span><span class="o">.</span><span class="n">distance_to</span><span class="p">(</span><span class="n">enemy_unit</span><span class="p">):</span>
+                <span class="n">target</span> <span class="o">=</span> <span class="n">enemy_cc</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">target</span> <span class="o">=</span> <span class="n">enemy_unit</span>
+            <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">marine</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">target</span><span class="p">))</span>
+
+            <span class="k">if</span> <span class="n">marine</span><span class="o">.</span><span class="n">distance_to</span><span class="p">(</span><span class="n">target</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">15</span><span class="p">:</span>
+                <span class="c1"># 해병과 목표의 거리가 15이하일 경우 스팀팩 사용</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">marine</span><span class="o">.</span><span class="n">has_buff</span><span class="p">(</span><span class="n">BuffId</span><span class="o">.</span><span class="n">STIMPACK</span><span class="p">)</span> <span class="ow">and</span> <span class="n">marine</span><span class="o">.</span><span class="n">health_percentage</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">:</span>
+                    <span class="c1"># 현재 스팀팩 사용중이 아니며, 체력이 50% 이상</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">evoked</span><span class="o">.</span><span class="n">get</span><span class="p">((</span><span class="n">marine</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="n">AbilityId</span><span class="o">.</span><span class="n">EFFECT_STIM</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">:</span>
+                        <span class="c1"># 1초 이전에 스팀팩을 사용한 적이 없음</span>
+                        <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">marine</span><span class="p">(</span><span class="n">AbilityId</span><span class="o">.</span><span class="n">EFFECT_STIM</span><span class="p">))</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">evoked</span><span class="p">[(</span><span class="n">marine</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="n">AbilityId</span><span class="o">.</span><span class="n">EFFECT_STIM</span><span class="p">)]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span>
+
+        <span class="c1">#</span>
+        <span class="c1"># 의료선 명령 생성</span>
+        <span class="c1">#</span>
+        <span class="n">medivacs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">units</span><span class="p">(</span><span class="n">UnitTypeId</span><span class="o">.</span><span class="n">MEDIVAC</span><span class="p">)</span>  <span class="c1"># 의료선 검색</span>
+        <span class="n">wounded_units</span> <span class="o">=</span> <span class="n">marines</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">u</span><span class="p">:</span> <span class="n">u</span><span class="o">.</span><span class="n">health_percentage</span> <span class="o">&lt;</span> <span class="mf">1.0</span><span class="p">)</span>  <span class="c1"># 체력이 100% 이하인 유닛 검색</span>
+        <span class="k">for</span> <span class="n">medivac</span> <span class="ow">in</span> <span class="n">medivacs</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">wounded_units</span><span class="o">.</span><span class="n">exists</span><span class="p">:</span>
+                <span class="n">wounded_unit</span> <span class="o">=</span> <span class="n">wounded_units</span><span class="o">.</span><span class="n">closest_to</span><span class="p">(</span><span class="n">medivac</span><span class="p">)</span>  <span class="c1"># 가장 가까운 체력이 100% 이하인 유닛</span>
+                <span class="n">actions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">medivac</span><span class="p">(</span><span class="n">AbilityId</span><span class="o">.</span><span class="n">MEDIVACHEAL_HEAL</span><span class="p">,</span> <span class="n">wounded_unit</span><span class="p">))</span>  <span class="c1"># 유닛 치료 명령</span>
+</pre></div>
+</div>
+<p>이 예제에서 알 수 있는 것은 StarCraft II에서 건물과 일반 유닛 모두 유닛으로 처리된다는 점과
+기본적으로는 이 모든 유닛을 루프문으로 순회하면서, 각각 액션을 결정해주는 것으로 전체 AI의
+액션을 결정할 수 있다는 점이다.</p>
+<p>빌드오더는 유닛을 생산하는 사령부와 연관되어 있기 때문에 전체 유닛 목록(self.units)에서 사령부를 찾고,
+사령부에서 유닛 생산 명령을 생성하는 것으로 처리한다.
+나머지 개별 유닛들은 전체 유닛 목록(self.units)를 순회하면서, 현재 상황에 맞게 각자의 액션을 결정한다.
+이 부분을 유닛 마이크로 컨트롤(mirco-control)문제라고 하는데, simple 예제들에서는 간단한 규칙으로 처리한다.</p>
+<p>dummy와 마찬가지로 다음 명령으로 실행할 수 있다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>sc2<span class="o">)</span> ~/sc2minigame $ python run_sc2minigame.py --bot1<span class="o">=</span>bots.nc1_simple
+</pre></div>
+</div>
+<p>상대 AI는 StarCraft II 기본 AI이기 때문에, 이 게임에서는 초반에 매우 약하고, Simple로도 쉽게 이길 수 있다.</p>
+<p>그러나, Simple은 빌드오더가 너무 간단하고, 하드코딩되어 있어 상황변화에 대응할 수 없고,
+또한 생산된 유닛들은 바로 가장 가까운 적 유닛이나 적 사령부에 공격을 시도하기 때문에,
+다른 AI들을 상대로는 승률이 매우 낮을 것으로 예상된다.</p>
 </div>
 
 
+           </div>
+           
           </div>
-          
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="../../index.html">
-              <img class="logo" src="../../_static/NC CI_window to the future-navy gradient.png" alt="Logo"/>
-            </a></p>
-<h1 class="logo"><a href="../../index.html">sc2minigame</a></h1>
-
-
-
-
-
-
-
-
-<h3>탐색</h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../README.html">빠른 시작</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../docs/intro.html">시스템 구조 및 게임 규칙</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nc0_dummy/README.html">예제 0. Dummy</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">예제 1. Simple: 간단한 build-order 봇</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nc2_simple2/README.html">예제 2. Simple 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nc3_simple3/README.html">예제 3. Simple 3</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../nc4_simple_ppo/README.html">예제 4. Simple PPO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nc4_simple_ppo/README.html">예제 5. Simple PPO</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../nc0_dummy/README.html" title="이전 장">예제 0. Dummy</a></li>
-      <li>Next: <a href="../nc2_simple2/README.html" title="다음 장">bots.nc_example_v2 package</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">빠른 검색</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="이동" />
-    </form>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../nc2_simple2/README.html" class="btn btn-neutral float-right" title="예제 2. Simple2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../nc0_dummy/README.html" class="btn btn-neutral float-left" title="예제 0. Dummy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
-</div>
-<script>$('#searchbox').show(0);</script>
+  
 
+  <hr/>
 
+  <div role="contentinfo">
+    <p>
+        
+        &copy; 저작권 2020, Game AI Lab, NCSOFT
 
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
-
-
-
+</footer>
 
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2020, Game AI Lab, NCSOFT.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="../../_sources/bots/nc1_simple/README.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
 
-    
+    </section>
 
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
     
-  </body>
+   
+
+</body>
 </html>

@@ -1,64 +1,211 @@
 
-<!DOCTYPE html>
 
-<html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <title>빠른 시작 &#8212; sc2minigame  문서</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <script src="_static/translations.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>시작하기 &mdash; sc2minigame  문서</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="index" title="색인" href="genindex.html" />
     <link rel="search" title="검색" href="search.html" />
-    <link rel="next" title="시스템 구조 및 게임 규칙" href="docs/intro.html" />
-    <link rel="prev" title="sc2minigame 튜토리얼" href="index.html" />
+    <link rel="next" title="시스템 구조 및 게임 규칙" href="docs/system_and_rules.html" />
+    <link rel="prev" title="sc2minigame 튜토리얼" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
    
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
-  </head><body>
-  
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
           
 
-          <div class="body" role="main">
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> sc2minigame
+          
+
+          
+            
+            <img src="_static/NC CI_window to the future2-white.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                20-11-17
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">환경설정 및 기본 예제</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">시작하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">설치</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">게임 실행</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="docs/system_and_rules.html">시스템 구조 및 게임 규칙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bots/nc0_dummy/README.html">예제 0. Dummy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bots/nc1_simple/README.html">예제 1. Simple: 간단한 build-order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bots/nc2_simple2/README.html">예제 2. Simple 2: 적응형 build-order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bots/nc3_simple3/README.html">예제 3. Simple 3: 집결지</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bots/nc4_simple_ppo/README.html">예제 4. Simple PPO: 분산학습 예</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bots/nc5_nuke_bot/README.html">예제 5. Nuke Bot: 스킬 사용 예</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eval/README.html">평가 시스템 및 제출 방식</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sc2minigame</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>시작하기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>빠른 시작<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<h1>시작하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>README.rst 파일을 보고 있다면, 전체 문서내용은 index.html을 참조할 것</p>
+</div>
 <div class="section" id="id2">
 <h2>소개<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
 <p>이 플랫폼은 2020년 NC Fellowship Game AI 경진대회 목적으로 구현되었다.
-이 플랫폼은 Blizzard™ <a class="footnote-reference brackets" href="#sc2" id="id3">1</a> 의 StarCraft 2, s2client-api <a class="footnote-reference brackets" href="#id8" id="id4">2</a> 그리고 Hannes Karppila의
-python-sc2 <a class="footnote-reference brackets" href="#id9" id="id5">3</a> 를 이용해 간단한 실시간 전략 시뮬레이션(Real-Time Strategy) 환경을 제공한다.</p>
+이 플랫폼은 Blizzard™ <a class="footnote-reference brackets" href="#sc2" id="id3">1</a> 의 StarCraft 2, s2client-api <a class="footnote-reference brackets" href="#id9" id="id4">2</a> 그리고 Hannes Karppila의
+python-sc2 <a class="footnote-reference brackets" href="#id10" id="id5">3</a> 를 이용해 간단한 실시간 전략 시뮬레이션(Real-Time Strategy) 환경을 제공한다.</p>
 <p>StarCraft 2같은 RTS 게임을 플레이하는 AI는 건물 건설, 유닛 생산, 업그레이드, 전투 등
 다양한 작업을 수행해야 하기 때문에, AI를 구현하려면 매우 많은 작업이 필요하다.
 2020년 경진대회에서는 자원 수집, 건물 건설을 생략하고,
 제한된 유닛 생산과 유닛 컨트롤에 집중한 경진대회 플랫폼(맵)을 구현했다.</p>
 <p>경진대회는 StarCraft 2 (v4.10) Linux 클라이언트를 기준으로 진행한다.
-Windows용 클라이언트는 자주 업데이트가 되며, 기존 python-sc2와 호환되지 않는 경우가 발생한다.
-뿐만 아니라, 이전 버전으로 다운그레이드가 어려운 문제가 있으므로,
-Linux 클라이언트를 사용하는 것을 기본으로 한다.</p>
+Windows용 클라이언트는 자주 업데이트가 되며, python-sc2와 호환되지 않는 경우가 종종 발생하며,
+이전 버전으로 다운그레이드가 어렵기 때문에, Linux 클라이언트를 사용하는 것을 기본으로 한다.</p>
 <div class="admonition note">
 <p class="admonition-title">참고</p>
 <p>현재 사용하고 있는 게임 규칙이나 유닛 속성은 경진대회 운영에 심각한 문제가 될 경우 일부 변경될 수 있음</p>
 </div>
+<p>경진대회는 Linux 클라이언트를 기준으로 진행되지만,
+가능하다면 Windows용 StarCraft II도 설치하는 것이 AI 개발에 편리하다.
+Linux용 클라이언트는 기본적으로 화면을 렌더링 하지 않기 때문에, 시스템 요구사항이 낮고 빠른 장점이 있지만,
+실제 AI가 작동하는 모습을 확인하기 불가능하지는 않지만, 추가 노력이 필요하다.
+특정 버그는 게임을 직접 플레이하거나, AI가 작동하는 모습을 관찰하면 쉽게 발견하거나 해결할 수 있으므로,
+대부분의 작업을 Linux에서 하더라도, 가능하다면 Windows에서 가끔 결과물을 확인하는것이 좋다.</p>
+<p>별도 Linux PC가 없다면, WSL (Windows Linux Subsystem) <a class="footnote-reference brackets" href="#wsl" id="id6">4</a> 을 이용할 수 있다.</p>
 <p>이 플랫폼은 python-sc2를 기반으로 구현되었기 때문에, python-sc2의 설치방법,
 사용법을 거의 그대로 공유한다. 이 문서에서 부족한 부분은, python-sc2 혹은
 그 기반이 되는 s2client-api를 참조할 수 있다.</p>
 </div>
-<div class="section" id="id6">
-<h2>설치<a class="headerlink" href="#id6" title="제목 주소">¶</a></h2>
+<div class="section" id="id7">
+<h2>설치<a class="headerlink" href="#id7" title="제목 주소">¶</a></h2>
 <p>이 플랫폼은 Winodws 10과 Ubuntu 18.04 환경에서 개발 및 테스트 했다.
 python-sc2가 macOS 환경도 지원하기 때문에 아마도 macOS에서도 문제가 없을 것으로 추측된다.</p>
 <p>플랫폼을 설치하는 과정은 세 단계로 구성된다.</p>
@@ -70,7 +217,7 @@ python-sc2가 macOS 환경도 지원하기 때문에 아마도 macOS에서도 �
 </ol>
 <p><strong>python 설치</strong></p>
 <p>여기서는 python anaconda 배포판을 사용하는 것을 기준으로 설명한다.
-Windows나 Linux GUI 환경에서는 <a class="reference external" href="https://www.anaconda.com/distribution/">https://www.anaconda.com/distribution/</a> 에서 윈도우즈 용
+Windows나 Linux GUI 환경에서는 <a class="reference external" href="https://www.anaconda.com/distribution/">https://www.anaconda.com/distribution/</a> 에서
 64bit python 3.7을 다운받아서 설치한다.</p>
 <p>Linux 터미널에서는 아래 명령으로 anaconda 배포판을 다운받아 설치한다.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
@@ -93,30 +240,32 @@ $
 <span class="o">(</span>sc2<span class="o">)</span> $ <span class="c1"># conda install pytorch torchvision cudatoolkit=10.2 -c pytorch  # gpu 버전</span>
 <span class="o">(</span>sc2<span class="o">)</span> $ pip install nest_asyncio
 <span class="o">(</span>sc2<span class="o">)</span> $ pip install s2clientprotocol
+<span class="o">(</span>sc2<span class="o">)</span> $ pip install plotille
 </pre></div>
 </div>
 <p><strong>StarCraft 2 설치</strong></p>
 <p>Windows 환경에서는 일반적인 방식으로 Battle.net을 통해 StarCraft 2를 설치한다.
-python-sc2에서 StarCraft 2 기본 설치 경로(C:Program Files (x86)StarCraft II)에서
+python-sc2에서 StarCraft 2 기본 설치 경로(C:/Program Files (x86)/StarCraft II)에서
 실행파일을 찾기 때문에, 가급적이면 설치 경로를 바꾸지 않는 것이 좋다. 설치 경로를 바꿔야 할 필요가 있다면,
 환경변수 SC2PATH를 변경해야 한다 (python-sc2 문서를 참조).</p>
 <div class="admonition warning">
 <p class="admonition-title">경고</p>
 <ul class="simple">
-<li><p>StarCraft 2 를 처음 설치하면 C:Program Files (x86)StarCraft IIMaps 폴더를 만들어줘야 한다.</p></li>
+<li><p>StarCraft 2 를 처음 설치하면 C:/Program Files (x86)/StarCraft II/Maps 폴더를 만들어줘야 한다.</p></li>
 <li><p>윈도우즈 탐색기에서 폴더를 만들고, 지도를 이 폴더에 복사해 두면, 플랫폼에서 이 폴더에 있는 지도를 사용할 수 있다.</p></li>
 </ul>
 </div>
-<p>Linux 환경에서는 <a class="reference external" href="https://github.com/Blizzard/s2client-proto#downloads">https://github.com/Blizzard/s2client-proto#downloads</a> 에서
+<p>Linux환경에서는 <a class="reference external" href="https://github.com/Blizzard/s2client-proto#downloads">https://github.com/Blizzard/s2client-proto#downloads</a> 에서
 Linux용 바이너리를 다운받아서 ~/StarCraftII에 압축을 해제한다.
 Linux용 바이너리는 Windows용 바이너리와 달리 화면을 렌더링하지 않아서(Headless),
-실행에 GPU가 필요하지 않고, 메모리 요구 사양도 낮다.</p>
+실행에 GPU가 필요하지 않고, 메모리 사용량도 적다.</p>
+<p>Windows와 마찬가지로 ~/StarCraftII/Maps가 없다면 직접 만들어줘야 한다.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="c1"># StarCraft 2 (v4.10) 리눅스 바이너리 다운로드</span>
 $ <span class="nb">cd</span> ~
 $ wget http://blzdistsc2-a.akamaihd.net/Linux/SC2.4.10.zip
 $
-$ <span class="c1"># 압축해제, 압축해제 암호: iagreetotheeula</span>
-$ sudo apt get install unzip
+$ <span class="c1"># 압축해제(암호: iagreetotheeula)</span>
+$ sudo apt install unzip
 $ unzip ~/SC2.4.10.zip -d ~/
 $
 $ <span class="c1"># 실행파일에 실행 권한 부여</span>
@@ -130,161 +279,139 @@ $ ln -s <span class="nv">$HOME</span>/StarCraftII/Maps <span class="nv">$HOME</s
 Linux용 바이너리는 원하는 버전을 언제나 사용할 수 있기 때문에,
 2020년 경진대회는 Linux용 바이너리 4.10을 기준으로 경진대회를 진행한다.</p>
 <p><strong>sc2minigame 설치</strong></p>
-<p>설치를 원하는 경로에 sc2minigame.zip을 압축해제하거나, 저장소에서 clone 한다.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone ????  <span class="c1"># 아직 없음</span>
-</pre></div>
-</div>
+<p><a class="reference external" href="https://github.com/rex8312/NCF2020/releases">https://github.com/rex8312/NCF2020/releases</a> 에서 최신 releases를 다운받아,
+설치를 원하는 경로에 압축해제한다. 여기서는 ~/sc2minigame에 압축해제했다고 가정하고 다음 과정을 진행한다.</p>
 <p>Windows와 Linux 모두 2020년 경진대회에 사용할 맵을 StarCraft II의 Maps 폴더에 복사한다.
 Maps 폴더가 없다면 생성후 복사한다.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="c1"># 지도 복사</span>
 $ cp ~/sc2minigame/maps/NCF-2020-v4.SC2Map <span class="nv">$HOME</span>/StarCraftII/Maps
 </pre></div>
 </div>
-<p><strong>(옵션) gnuplot 설치</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install gnuplot
-</pre></div>
 </div>
-</div>
-<div class="section" id="id7">
-<h2>게임 실행<a class="headerlink" href="#id7" title="제목 주소">¶</a></h2>
+<div class="section" id="id8">
+<h2>게임 실행<a class="headerlink" href="#id8" title="제목 주소">¶</a></h2>
 <p><strong>예제 AI vs. StarCraft 기본 AI</strong></p>
 <p>구현한 AI와 기본 컴퓨터 AI끼리 플레이를 할 때는 다음 명령을 입력한다.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>sc2<span class="o">)</span> ~/sc2minigame $ python run_sc2minigame.py <span class="se">\</span>
-                      --bot1<span class="o">=</span>bots.nc3_rally_bot <span class="se">\</span>
+                      --bot1<span class="o">=</span>bots.nc3_simple3 <span class="se">\</span>
                       --realtime<span class="o">=</span>True <span class="se">\</span>
                       --save_replay_as<span class="o">=</span>test.SC2Replay
 </pre></div>
 </div>
 <p>–bot1 옵션은 1번 플레이어 경로를 지정하는 옵션이고
 –bot2에 기본 플레이어 옵션으로 기본 AI (난이도 7)가 지정되어 있다.</p>
-<p>bots.nc3_rally_bot AI는 ./bots/nc3_rally_bot/bot.py 파일에 있는 Bot 클래스이다.
-경진대회에서는 AI의 파일 이름은 bot.py 클래스 이름은 Bot으로 한다.</p>
+<p>bots.nc3_simple3 AI는 ./bots/nc3_simple3 폴더에 있는 AI 이다.
+이 문서/플랫폼에서는 bot과 AI는 동일한 의미로 사용한다.</p>
 <p>–realtime 옵션이 True 일때는 게임이 실시간으로 실행되고
-False 일때는 최대한 빠르게 가속되어 실행된다.</p>
+False 일때는 최대한 빠르게 가속되어 실행된다.
+경진대회에서는 AI vs. AI만을 가정하기 때문에,
+디버깅 목적이외에 realtime 옵션을 사용할 경우는 없을 것이다.</p>
 <p>–save_replay_as 옵션은 리플레이를 저장하고 싶을때 사용한다.
 파일이름(확장자 SC2Replay)를 지정하면, 리플레이가 파일로 저장된다.
 Linux 바이너리로 게임을 플레이하고 저장한 리플레이를, Windows에서 볼 수 있다.</p>
-<p>Windows에서는 잠시후 StarCraft II 게임이 실행될 것이고,
+<p>Windows에서는 잠시 후 StarCraft II 게임이 실행될 것이고,
 Linux에서는 터미널에서 로그 메시지가 출력될 것이다.
 게임이 성공적으로 실행되면, 플랫폼 설치가 완료된 것이다.</p>
 <p>run_sc2minigame.py는 AI를 실행하는 하나의 예일 뿐이고, python-sc2에서
-제공하는 API를 이용해 다양한 방식으로 실행가능하다(python-sc2 예제 참조)</p>
-<p><strong>예제 AI vs. 예제 AI</strong></p>
+제공하는 API를 이용해 다양한 방식으로 실행가능하다(python-sc2 예제 참조).
+실제 개발 도중에는 run_sc2minigame.py를 이용해 게임을 실행하는 경우보다,
+직접 작성한 학습 스크립트를 이용해 실행하는 경우가 훨씬 많다.</p>
+<p><strong>실행 예1) 예제 AI vs. 예제 AI</strong></p>
 <p>다른 두 예제 AI끼리 게임을 하려면 다음 처럼 –bot1과 –bot2 옵션으로
 게임을 하려는 AI를 지정하면 된다.</p>
 <p>python-sc2를 이용해 구현한 AI는 게임에서는 인간 플레이어로 취급되므로,
 기본 AI로 플레이 할때와 달리 게임이 두 개가 실행된다.
-게임 하나는 서버가 되고, 하나는 클라이언트가 되어 멀티 플레이로 게임이 실행된다.</p>
+게임 하나는 서버가 되고, 하나는 클라이언트가 되어 멀티 플레이로 게임이 실행된다.
+python-sc2에서는 서버를 host, 클라이언트를 join이라고 한다.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>sc2<span class="o">)</span> ~/sc2minigame $ python run_sc2minigame.py <span class="se">\</span>
-                      --bot1<span class="o">=</span>bots.bots.nc3_rally_bot <span class="se">\</span>
-                      --bot2<span class="o">=</span>bots.bots.nc3_rally_bot <span class="se">\</span>
+                      --bot1<span class="o">=</span>bots.nc3_simple3 <span class="se">\</span>
+                      --bot2<span class="o">=</span>bots.nc3_simple3 <span class="se">\</span>
                       --realtime<span class="o">=</span>False
 </pre></div>
 </div>
-<p><strong>인간 vs. 예제 AI</strong></p>
+<p><strong>실행 예2) 인간 vs. 예제 AI</strong></p>
 <p>python-sc2로 구현한 AI는 게임 중에 사람의 입력을 그대로 받을 수 있다.
-따라서, run_sc2minigame.py에서는 아무 행동도 하지 않는 AI인 dummy_bot 실행해서
+따라서, run_sc2minigame.py에서는 아무 행동도 하지 않는 AI인 dummy를 실행해서
 AI와 게임을 플레이 할 수 있도록 했다.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>sc2<span class="o">)</span> ~/sc2minigame $ python run_sc2minigame.py <span class="se">\</span>
-                      --bot1<span class="o">=</span>bots.bots.nc0_dummy_bot <span class="se">\</span>
-                      --bot2<span class="o">=</span>bots.bots.nc3_rally_bot <span class="se">\</span>
+                      --bot1<span class="o">=</span>bots.nc0_dummy <span class="se">\</span>
+                      --bot2<span class="o">=</span>bots.nc3_simple3 <span class="se">\</span>
                       --realtime<span class="o">=</span>True
 </pre></div>
 </div>
-<p>python-sc2에는 인간 플레이어를 직접 지정하는 할 수 있으므로 그 기능을 사용해도 무방하다.</p>
+<p>python-sc2에는 인간 플레이어를 직접 지정하는 할 수 도 있다 (python-sc2 문서 참조).</p>
 <p class="rubric">Footnotes</p>
 <dl class="footnote brackets">
 <dt class="label" id="sc2"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
 <dd><p>StarCraft는 미국 및 다른 국가에서 Blizzard Entertainment Inc. 의 상표 또는 등록상표 입니다.</p>
 </dd>
-<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id4">2</a></span></dt>
+<dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id4">2</a></span></dt>
 <dd><p><a class="reference external" href="https://github.com/Blizzard/s2client-api">https://github.com/Blizzard/s2client-api</a></p>
 </dd>
-<dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id5">3</a></span></dt>
+<dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id5">3</a></span></dt>
 <dd><p><a class="reference external" href="https://github.com/Dentosal/python-sc2">https://github.com/Dentosal/python-sc2</a></p>
+</dd>
+<dt class="label" id="wsl"><span class="brackets"><a class="fn-backref" href="#id6">4</a></span></dt>
+<dd><p><a class="reference external" href="https://docs.microsoft.com/ko-kr/windows/wsl/">https://docs.microsoft.com/ko-kr/windows/wsl/</a></p>
 </dd>
 </dl>
 </div>
 </div>
 
 
+           </div>
+           
           </div>
-          
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="index.html">
-              <img class="logo" src="_static/NC CI_window to the future-navy gradient.png" alt="Logo"/>
-            </a></p>
-<h1 class="logo"><a href="index.html">sc2minigame</a></h1>
-
-
-
-
-
-
-
-
-<h3>탐색</h3>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">빠른 시작</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docs/intro.html">시스템 구조 및 게임 규칙</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bots/nc0_dummy/README.html">예제 0. Dummy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bots/nc1_simple/README.html">예제 1. Simple: 간단한 build-order 봇</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bots/nc2_simple2/README.html">예제 2. Simple 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bots/nc3_simple3/README.html">예제 3. Simple 3</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="bots/nc4_simple_ppo/README.html">예제 4. Simple PPO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bots/nc4_simple_ppo/README.html">예제 5. Simple PPO</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="이전 장">sc2minigame 튜토리얼</a></li>
-      <li>Next: <a href="docs/intro.html" title="다음 장">시스템 구조 및 게임 규칙</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">빠른 검색</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="이동" />
-    </form>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="docs/system_and_rules.html" class="btn btn-neutral float-right" title="시스템 구조 및 게임 규칙" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="sc2minigame 튜토리얼" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
-</div>
-<script>$('#searchbox').show(0);</script>
+  
 
+  <hr/>
 
+  <div role="contentinfo">
+    <p>
+        
+        &copy; 저작권 2020, Game AI Lab, NCSOFT
 
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
-
-
-
+</footer>
 
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2020, Game AI Lab, NCSOFT.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/README.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
 
-    
+    </section>
 
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
     
-  </body>
+   
+
+</body>
 </html>

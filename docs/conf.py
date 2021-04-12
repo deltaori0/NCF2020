@@ -23,8 +23,8 @@ sys.path.insert(0, os.path.abspath('..'))
 project = 'sc2minigame'
 copyright = '2020, Game AI Lab, NCSOFT'
 author = '박현수'
-html_logo = '_static/NC_CI/NC CI_window to the future-navy gradient.png'
-latex_logo = '_static/NC_CI/NC CI_window to the future-black.png'
+html_logo = '_static/NC_CI/NC CI_window to the future2-white.png'
+latex_logo = '_static/NC_CI/NC CI_window to the future-navy gradient.png'
 
 # The short X.Y version
 version = datetime.date.today().strftime('%y-%m-%d')
@@ -70,10 +70,10 @@ language = 'ko'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '__backup__']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '__*__']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = 'sphinx'
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -81,7 +81,7 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-# html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_rtd_theme'
 html_theme_path = ["_themes", ]
 
 # Theme options are theme-specific and customize the look and feel of a theme

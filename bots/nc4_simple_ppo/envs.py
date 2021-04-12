@@ -22,10 +22,10 @@ from termcolor import cprint
 import numpy as np
 from IPython import embed
 
-from ..nc3.bot import Bot as OppBot
+from ..nc3_simple3.bot import Bot as OppBot
 from .bot import Bot as MyBot
 from .consts import CommandType
-from toolbox.utils import kill_children_processes
+from sc2_utils import kill_children_processes
 
 
 def device_func(context, frontend_addr, backend_addr):

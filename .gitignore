@@ -1,7 +1,7 @@
 .vscode/*
-/__backup__/*
-/__expr__/*
-/__bots__/*
+/__*__/*
 __pycache__
 *.pyc
 /runs/*
+/eval_example/results/*
+/eval_example/bots/*

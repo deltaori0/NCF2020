@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>평가 시스템 및 제출방식 &mdash; sc2minigame  문서</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="prev" title="예제 5. Nuke Bot" href="../bots/nc5_nuke_bot/README.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> sc2minigame
+          
+
+          
+            
+            <img src="../_static/NC CI_window to the future2-white.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                20-11-17
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">환경설정 및 기본 예제</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../README.html">시작하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/system_and_rules.html">시스템 구조 및 게임 규칙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bots/nc0_dummy/README.html">예제 0. Dummy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bots/nc1_simple/README.html">예제 1. Simple: 간단한 build-order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bots/nc2_simple2/README.html">예제 2. Simple 2: 적응형 build-order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bots/nc3_simple3/README.html">예제 3. Simple 3: 집결지</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bots/nc4_simple_ppo/README.html">예제 4. Simple PPO: 분산학습 예</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bots/nc5_nuke_bot/README.html">예제 5. Nuke Bot: 스킬 사용 예</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">평가 시스템 및 제출 방식</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">저장소 공유</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ai">AI 제출방식</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">평가 시스템</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">sc2minigame</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>평가 시스템 및 제출방식</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/eval/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>평가 시스템 및 제출방식<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>참가팀들이 github에 각자 자신들이 구현한 AI를 업데이트(push)하면,
+평가 시스템이 이를 다운로드(clone 또는 pull)하여 평가하고,
+결과를 github의 특정 저장소에 업로드(push) 하는 방식으로 진행한다.</p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>모든 저장소는 비공개(private)로 하고, 경진대회 운영진과 공유한다.</p>
+</div>
+<div class="section" id="id2">
+<h2>저장소 공유<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>참가팀마다 AI를 제출하기 위한 비공개(private)저장소를 github에 만들고
+경진대회 운영진과 공유하면, 경진대회 운영진에서 아래 세 가지 저장소를 공유한다.</p>
+<ul class="simple">
+<li><p>NCF2020 (<a class="reference external" href="https://github.com/rex8312/NCF2020">https://github.com/rex8312/NCF2020</a>),</p></li>
+<li><p>제출예제 (<a class="reference external" href="https://github.com/rex8312/nc1_simple">https://github.com/rex8312/nc1_simple</a>),</p></li>
+<li><p>평가결과 (<a class="reference external" href="https://github.com/rex8312/NCF2020_Eval">https://github.com/rex8312/NCF2020_Eval</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="ai">
+<h2>AI 제출방식<a class="headerlink" href="#ai" title="제목 주소">¶</a></h2>
+<p>참가자들이 AI를 저장소에 push 해두면 토너먼트 시스템이 주기적으로 pull 한다.</p>
+<p><strong>제출 예</strong>: <a class="reference external" href="https://github.com/rex8312/nc1_simple">https://github.com/rex8312/nc1_simple</a></p>
+</div>
+<div class="section" id="id3">
+<h2>평가 시스템<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
+<p>평가 시스템은 주기적으로 실행되어 운영진과 공유하고 있는 저장소에서 최신 AI들을 다운받아 평가를 한다.
+AI끼리 조합가능한 모든 게임을 100회 플레이(league, round-robin tournament 방식)하고,
+게임 결과(승패, 리플레이 등)를 NCF2020 결과 저장소에 업데이트 한다.</p>
+<p><strong>NCF2020 결과 저장소</strong>: <a class="reference external" href="https://github.com/rex8312/NCF2020_Eval">https://github.com/rex8312/NCF2020_Eval</a></p>
+<p>구체적인 평가 스케쥴은 변경될 수 있지만, 일주일에 한번 이상 평가할 예정이다.
+중간평가 결과는 최종 경진대회 결과와 무관하다.
+중간평가 결과는 주기적으로 삭제될 수 있다.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../bots/nc5_nuke_bot/README.html" class="btn btn-neutral float-left" title="예제 5. Nuke Bot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; 저작권 2020, Game AI Lab, NCSOFT
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

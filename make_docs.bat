@@ -26,7 +26,9 @@ if errorlevel 9009 (
 
 rem %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% -c docs
 %SPHINXBUILD% -M %TARGET% %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% -c docs
+index.html
 goto end
 
 :end
 popd
+

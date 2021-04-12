@@ -4,12 +4,12 @@ import argparse
 import os
 import platform
 from collections import namedtuple
-from toolbox.utils import get_ip
+from sc2_utils import get_ip
 
 
 Host = namedtuple('Host', 'address, cpu_capacity, gpu_capacity')
 
-Learner = Host(get_ip('8.8.8.8'), cpu_capacity=0, gpu_capacity=0)
+Trainer = Host(get_ip('8.8.8.8'), cpu_capacity=0, gpu_capacity=0)
 hosts = [    
     Host('192.168.0.102', cpu_capacity=16, gpu_capacity=0),
     # Host('192.168.0.102', cpu_capacity=1, gpu_capacity=0),
@@ -56,7 +56,7 @@ def copy_sc2(args, hosts):
 
 
 def run_actors(args, hosts):
-    addr = Learner.address
+    addr = Trainer.address
     cmds = []
     cmds.append(f'source ~/anaconda3/bin/activate sc2')        
     cmds.append(f'cd ~/NCF2020')   
@@ -71,7 +71,7 @@ def train(args, hosts):
     cmds = list()
     # tmux 세션 시작
     cmds.append('''tmux new -s sc2 -d''')
-    # learner 시작
+    # Trainer 시작
     cmds.append('''tmux send -t sc2 "source ~/anaconda3/bin/activate sc2" ENTER''')
     cmds.append(f'''tmux send -t sc2 "cd {Path.cwd()}" ENTER''')
     cmds.append(f'''tmux send -t sc2 "python -m bots.{args.bot}.train" ENTER''')
@@ -92,7 +92,7 @@ def train(args, hosts):
                 'source ~/anaconda3/bin/activate sc2',
                 'cd ~/NCF2020',
                 f'python -m bots.{args.bot}.train '
-                    f'--attach={Learner.address} '
+                    f'--attach={Trainer.address} '
                     f'--n_actors={host.cpu_capacity}',
             ])
             cmd = f'''ssh {host.address} -t "{remote_cmd}"'''

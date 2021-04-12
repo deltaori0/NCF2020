@@ -17,8 +17,6 @@ from sc2.data import Result
 from sc2.player import Bot, Computer
 from tqdm import trange
 
-from toolbox.init.argparse import parse_bool
-
 logger = logging.getLogger(__file__)
 logger.setLevel(logging.DEBUG)
 
@@ -29,7 +27,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--bot1',
         type=str,
-        default='bots.nc4',
+        default='bots.nc5_example',
         help='bot 1 (player 1) 설정')
     parser.add_argument(
         '--bot2',
